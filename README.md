@@ -12,8 +12,10 @@ To run a go application:
 ----
 To work with multiple go applications within one repo, first create and populate the file by executing go work:
 ````
- cd /my/parent/dir
- go work init
- go work use project-one
- go work use project-two
+ cd /my/parent/repo_dir
+    $ go work init     // One time thing
+
+Every time you create a new project inside the repo. 
+Run this command from cd /my/parent/repo_dir
+    $ go work use <PROJECT_FOLDER_NAME>
 ```
